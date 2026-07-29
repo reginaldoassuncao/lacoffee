@@ -9,13 +9,13 @@ export function MenuSection({ category }: MenuSectionProps) {
   return (
     <section
       id={category.id}
-      className="scroll-mt-36 animate-fade-in"
+      className="scroll-mt-[9.5rem] animate-fade-in"
       aria-labelledby={`${category.id}-title`}
     >
       <div className="mb-2 flex items-end gap-3">
         <h2
           id={`${category.id}-title`}
-          className="font-display text-3xl font-semibold tracking-wide text-teal-bright"
+          className="font-display text-[1.65rem] leading-tight font-semibold tracking-wide text-teal-bright sm:text-3xl"
         >
           {category.name}
         </h2>

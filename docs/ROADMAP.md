@@ -14,7 +14,7 @@ Cardápio digital (QR code das mesas) com React + Vite.
 |------|------|--------|
 | 0 | Setup e documentação | Concluída |
 | 1 | Cardápio estático | Concluída |
-| 2 | Deploy + QR code | Pendente |
+| 2 | Deploy + QR code | Concluída |
 | 3 | Supabase (menu no banco) | Pendente |
 | 4 | Painel admin | Pendente |
 | 5 | SEO e polimento | Pendente |

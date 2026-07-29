@@ -1,7 +1,7 @@
 # Estado atual
 
-**Fase concluída:** 1 — Cardápio estático  
-**Próxima fase:** 2 — Deploy + QR code
+**Fase concluída:** 2 — Deploy + QR code  
+**Próxima fase:** 3 — Supabase (menu no banco)
 
 ## O que já existe
 
@@ -9,15 +9,17 @@
 - Logo em `public/brand/logo.png`
 - Identidade visual (fundo escuro, teal + marrom da marca)
 - Cardápio mobile-first em `/` e `/cardapio`
-- Dados de exemplo em `src/data/menu.ts` (trocar pelos preços reais)
-- Documentação em `docs/`
+- Cardápio real completo em `src/data/menu.ts`
+- Deploy na Vercel: https://lacoffee.vercel.app
+- QR code: `public/qr-cardapio.png` (também em `docs/qr-cardapio.svg`)
+- `vercel.json` com rewrite SPA
 
 ## Próximo passo
 
-Implementar a **Fase 2**: deploy na Vercel e gerar QR apontando para a URL publicada.
+Implementar a **Fase 3**: mover o cardápio para o Supabase.
 
 ## Pendências de conteúdo
 
-- Lista real de itens e preços (`src/data/menu.ts`)
 - WhatsApp / Instagram (fases futuras)
 - Fotos dos produtos (opcional)
+- Revisar preços/textos com o estabelecimento se necessário
