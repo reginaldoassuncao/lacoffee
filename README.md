@@ -1,6 +1,10 @@
 # La Coffee Gelateria
 
-Site + cardápio digital (QR code) + painel admin.
+Cardápio digital para QR code das mesas.
+
+## Stack
+
+React + Vite + TypeScript + Tailwind CSS
 
 ## Desenvolvimento
 
@@ -9,9 +13,12 @@ npm install
 npm run dev
 ```
 
-Abra [http://localhost:3000](http://localhost:3000).
+Abra `http://localhost:5173` — o cardápio é a página inicial.
 
-## Documentação
+## Conteúdo
 
-- [Roadmap](docs/ROADMAP.md)
-- [Estado atual](docs/ESTADO-ATUAL.md)
+Itens e preços ficam em `src/data/menu.ts`. Os valores atuais são de **exemplo**.
+
+## Docs
+
+Veja `docs/ROADMAP.md` e `docs/ESTADO-ATUAL.md`.

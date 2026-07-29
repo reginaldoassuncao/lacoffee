@@ -1,23 +1,23 @@
 # Estado atual
 
-**Fase concluída:** 0 — Setup e documentação  
-**Próxima fase:** 1 — Site institucional
+**Fase concluída:** 1 — Cardápio estático  
+**Próxima fase:** 2 — Deploy + QR code
 
 ## O que já existe
 
-- Projeto Next.js 16 + Tailwind 4 + TypeScript (`src/`)
-- Identidade visual base (preto, verde, dourado + fontes Cormorant / DM Sans / Great Vibes)
-- Página inicial placeholder com marca e slogan
-- Imagens de referência em `public/brand/` (fachada, capa do cardápio, Instagram)
-- Dados da gelateria em `src/lib/site.ts`
+- Projeto React + Vite + TypeScript + Tailwind 4
+- Logo em `public/brand/logo.png`
+- Identidade visual (fundo escuro, teal + marrom da marca)
+- Cardápio mobile-first em `/` e `/cardapio`
+- Dados de exemplo em `src/data/menu.ts` (trocar pelos preços reais)
 - Documentação em `docs/`
 
 ## Próximo passo
 
-Implementar a **Fase 1**: página institucional completa (hero com fachada, sobre, horários, endereço, Instagram/WhatsApp, CTA para `/cardapio`).
+Implementar a **Fase 2**: deploy na Vercel e gerar QR apontando para a URL publicada.
 
-## Pendências de conteúdo (para fases futuras)
+## Pendências de conteúdo
 
-- Número de WhatsApp (Fase 1)
-- Fotos/páginas do menu com itens e preços (Fase 2/3)
-- Email/senha do dono para o admin (Fase 4)
+- Lista real de itens e preços (`src/data/menu.ts`)
+- WhatsApp / Instagram (fases futuras)
+- Fotos dos produtos (opcional)

@@ -2,30 +2,28 @@
 
 ## Objetivo
 
-Criar o projeto base e a documentação das fases, com identidade visual inicial.
+Criar o projeto base React + Vite com identidade visual e docs das fases.
 
 ## Tarefas
 
-- [x] Criar Next.js + Tailwind + TypeScript
-- [x] Estrutura de pastas (`src/components`, `src/lib`, `src/data`, `docs/`)
-- [x] Copiar imagens para `public/brand/`
+- [x] Criar Vite + React + TypeScript
+- [x] Instalar Tailwind CSS 4
+- [x] Copiar logo para `public/brand/`
 - [x] Configurar cores e fontes da marca
-- [x] Página placeholder estilizada
 - [x] Criar ROADMAP, ESTADO-ATUAL e docs das fases
-- [x] Smoke: `npm run build` ok
 
 ## Arquivos envolvidos
 
-- `package.json`, `src/app/*`
-- `src/lib/site.ts`
-- `public/brand/*`
+- `package.json`, `vite.config.ts`, `index.html`
+- `src/index.css`, `src/lib/site.ts`
+- `public/brand/logo.png`
 - `docs/**`
 
 ## Critérios de conclusão
 
-- `npm run dev` abre uma página com a marca La Coffee (fundo escuro / dourado)
+- `npm run dev` sobe o app
 - Documentação das fases 0–5 existe em `docs/fases/`
 
 ## Testes
 
-- Smoke: subir o servidor local e conferir a home no navegador
+- Smoke: `npm run build` ok

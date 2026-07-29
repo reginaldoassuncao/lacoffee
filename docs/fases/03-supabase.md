@@ -1,27 +1,27 @@
-# Fase 3 — Banco de dados (Supabase)
+# Fase 3 — Supabase
 
 ## Objetivo
 
-Mover o cardápio do arquivo estático para o Supabase, com leitura pública.
+Mover categorias e itens do arquivo local para o banco Supabase.
 
 ## Tarefas
 
 - [ ] Criar projeto Supabase
-- [ ] Tabelas `categories` e `products` + RLS (leitura pública, escrita autenticada)
-- [ ] Popular com os itens do menu
-- [ ] Trocar `/cardapio` para ler do banco
+- [ ] Tabelas `categories` e `items`
+- [ ] Ler o menu do banco na página do cardápio
+- [ ] Manter fallback se o banco falhar
 
 ## Arquivos envolvidos
 
-- `supabase/migrations/*` (ou SQL documentado)
-- `src/lib/supabase/*`
-- `src/app/cardapio/page.tsx`
-- `.env.local` (URL e anon key)
+- `src/lib/supabase.ts`
+- `src/data/` ou hooks de fetch
+- `src/pages/Cardapio.tsx`
 
 ## Critérios de conclusão
 
-- Cardápio publicado lê categorias e produtos do Supabase
+- Cardápio carrega itens do Supabase
+- Alterar um preço no banco reflete no site
 
 ## Testes
 
-- Smoke: alterar um preço no banco e ver refletir no `/cardapio`
+- Smoke: mudar um preço no banco e recarregar a página

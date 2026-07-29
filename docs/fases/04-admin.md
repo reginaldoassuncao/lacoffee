@@ -2,30 +2,24 @@
 
 ## Objetivo
 
-Permitir que o dono edite o cardápio sozinho (login + CRUD).
+Permitir que o dono edite o cardápio sem mexer no código.
 
 ## Tarefas
 
-- [ ] Login com Supabase Auth (1 conta do dono)
-- [ ] CRUD de categorias e produtos
-- [ ] Marcar item como esgotado / esconder
-- [ ] Upload de foto no Supabase Storage
-- [ ] Reordenar itens e editar preços
+- [ ] Login (Supabase Auth)
+- [ ] CRUD de categorias e itens
+- [ ] Proteger rota `/admin`
 
 ## Arquivos envolvidos
 
-- `src/app/admin/*`
-- `src/lib/supabase/*`
-- Storage bucket de produtos
+- `src/pages/admin/*`
+- Políticas RLS no Supabase
 
 ## Critérios de conclusão
 
-- Dono muda um preço no celular e vê no cardápio na hora
+- Dono consegue logar e editar itens
+- Visitante não acessa o admin
 
 ## Testes
 
-- Smoke: login → editar preço → conferir `/cardapio` sem login
-
-## Conteúdo necessário
-
-- Email e senha que o dono vai usar
+- Smoke: criar/editar/ocultar um item pelo admin

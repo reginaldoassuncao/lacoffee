@@ -1,32 +1,32 @@
 # Roadmap — La Coffee Gelateria
 
-Site institucional + cardápio digital (QR code das mesas) + painel admin.
+Cardápio digital (QR code das mesas) com React + Vite.
 
 ## Stack
 
-- Next.js + Tailwind CSS
-- Supabase (banco, login, fotos) — a partir da Fase 3
-- Vercel (hospedagem gratuita)
+- React + Vite + TypeScript + Tailwind CSS
+- Supabase (banco, login) — a partir da Fase 3
+- Vercel (hospedagem) — Fase 2
 
 ## Fases
 
 | Fase | Nome | Status |
 |------|------|--------|
 | 0 | Setup e documentação | Concluída |
-| 1 | Site institucional (`/`) | Pendente |
-| 2 | Cardápio estático (`/cardapio`) + deploy | Pendente |
+| 1 | Cardápio estático | Concluída |
+| 2 | Deploy + QR code | Pendente |
 | 3 | Supabase (menu no banco) | Pendente |
-| 4 | Painel admin (`/admin`) | Pendente |
-| 5 | QR code, SEO e revisão | Pendente |
+| 4 | Painel admin | Pendente |
+| 5 | SEO e polimento | Pendente |
 
 ## Detalhes
 
 - [Fase 0](fases/00-setup.md)
-- [Fase 1](fases/01-site-institucional.md)
-- [Fase 2](fases/02-cardapio-estatico.md)
+- [Fase 1](fases/01-cardapio-estatico.md)
+- [Fase 2](fases/02-deploy-qr.md)
 - [Fase 3](fases/03-supabase.md)
 - [Fase 4](fases/04-admin.md)
-- [Fase 5](fases/05-qr-seo.md)
+- [Fase 5](fases/05-seo-polimento.md)
 
 ## Como continuar
 

@@ -1,0 +1,87 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-ink: #070908;
+  --color-ink-soft: #101412;
+  --color-ink-lift: #171c1a;
+  --color-teal: #1f5c55;
+  --color-teal-bright: #2a7a71;
+  --color-teal-muted: #9bb8b3;
+  --color-coffee: #8a5230;
+  --color-coffee-soft: #b87a4e;
+  --color-cream: #e8e4dc;
+  --color-cream-muted: #b5b0a6;
+  --color-line: #2a332f;
+
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Outfit', system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100dvh;
+    font-family: var(--font-sans);
+    background:
+      radial-gradient(ellipse 90% 55% at 50% -10%, #1a3d38 0%, transparent 55%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, #2a1a12 0%, transparent 50%),
+      var(--color-ink);
+    color: var(--color-cream);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  #root {
+    min-height: 100dvh;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--color-teal) 55%, transparent);
+    color: var(--color-cream);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes underline-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.55s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s ease-out both;
+}
+
+.animate-underline {
+  transform-origin: left;
+  animation: underline-grow 0.45s ease-out both;
+}
